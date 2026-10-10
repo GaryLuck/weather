@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#19264b"><title>Skytime · Germantown</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="sky" aria-hidden="true"><div class="stars"></div><div class="orb"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="hills hill-back"></div><div class="hills hill-front"></div></div>
+<div class="shell">
+<header><a class="brand" href="./"><span class="brand-icon">◒</span> skytime</a><span class="location"><span class="location-dot"></span> Germantown, Maryland</span></header>
+<main>
+<div class="intro"><span class="eyebrow">A LITTLE MOMENT UNDER THE SKY</span><h1>Make time for<br> a different view.</h1><p>Slide through the day. Watch the sky follow.</p></div>
+<section class="clock-panel" aria-label="Explore the time of day">
+<div class="clock-heading"><span id="period">EVENING GLOW</span><button id="now" type="button">↺ Back to now</button></div>
+<label class="clock" for="time"><input id="time" type="time" aria-label="Choose the time of day"></label>
+<div class="range-wrap"><input id="slider" type="range" min="0" max="1439" step="1" aria-label="Slide to choose the time of day"><div class="range-labels"><span>Midnight</span><span>Sunrise</span><span>Noon</span><span>Sunset</span><span>Midnight</span></div></div>
+<div class="clock-footer"><span><span class="live-dot" id="time-dot"></span> <span id="time-mode">Your time, your sky</span></span><span>Eastern time</span></div>
+</section>
+<div class="cards">
+<section class="card date-card"><span class="eyebrow">TODAY’S DATE</span><div class="date-body"><div class="calendar-icon" aria-hidden="true"><span id="month-short">OCT</span><strong id="day-number">10</strong></div><div><h2 id="weekday">Saturday</h2><p id="full-date"></p></div></div><p class="card-note">A new day. A fresh perspective.</p></section>
+<section class="card weather-card" aria-label="Current weather"><div class="card-top"><span class="eyebrow">OUTSIDE IN GERMANTOWN</span><button id="refresh" aria-label="Refresh weather" title="Refresh weather">↻</button></div><div class="weather-body"><span id="weather-icon" class="weather-icon" aria-hidden="true">☁</span><div><h2 id="temperature">—<span>°F</span></h2><p id="conditions" role="status">Checking the sky…</p></div></div><p class="card-note" id="weather-detail">Live weather · Actual conditions</p></section>
+<section class="card birthday-card"><span class="eyebrow">SOMETHING TO LOOK FORWARD TO</span><div class="birthday-body"><span class="birthday-icon" aria-hidden="true">✦</span><div><h2 id="birthday-count"></h2><p id="birthday-label">until Ethan’s birthday</p></div></div><p class="card-note" id="birthday-note">April 22 · A day worth celebrating</p></section>
+</div>
+</main>
+<footer><span>A sky for every mood.</span><span>Weather by <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> <span class="footer-star">✦</span></span></footer>
+</div><script type="module" src="app.js"></script>
+</body></html>
